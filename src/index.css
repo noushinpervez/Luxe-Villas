@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quattrocento:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text: #111410;
+    --background: #fcfdfc;
+    --primary: #819a7e;
+    --secondary: #b5bfc4;
+    --accent: #9b9eb0;
+  }
+
+  .dark {
+    --text: #ecefeb;
+    --background: #020302;
+    --primary: #688165;
+    --secondary: #3b454a;
+    --accent: #4f5264;
+  }
+}
+
+h3, .cinzel {
+  font-family: "Cinzel", serif;
+}
+
+body {
+  font-family: "Quattrocento", serif;
+  font-size: 1rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+  font-family: "Cinzel", serif;
+}
+
+.swiper-slide {
+  color: #ecefeb;
+  position: relative;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}

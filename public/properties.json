@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Oceanfront Paradise Villa",
+        "segment_name": "Luxury",
+        "description": "Experience ultimate luxury and tranquility in this stunning oceanfront villa. Featuring breathtaking views, private beach access, and lavish amenities.",
+        "price": "$10,000,000",
+        "status": "sale",
+        "area": "5000 sq ft",
+        "location": {
+            "country": "Maldives",
+            "city": "Male"
+        },
+        "facilities": [
+            "Infinity Pool",
+            "Private Beach",
+            "Spa",
+            "Gym",
+            "Theater Room"
+        ],
+        "bedrooms": 5,
+        "bathrooms": 7,
+        "parking_spaces": 3,
+        "built_year": 2018,
+        "image": "oceanfront_paradise_villa.jpg"
+    },
+    {
+        "id": 2,
+        "estate_title": "Luxurious Mountain Retreat",
+        "segment_name": "Luxury",
+        "description": "Escape to the mountains in style with this exquisite retreat. Nestled in the heart of nature, this estate offers unparalleled privacy and sophistication.",
+        "price": "$7,500,000",
+        "status": "sale",
+        "area": "8000 sq ft",
+        "location": {
+            "country": "Switzerland",
+            "city": "Zermatt"
+        },
+        "facilities": [
+            "Ski-in/Ski-out Access",
+            "Sauna",
+            "Wine Cellar",
+            "Home Theater",
+            "Game Room"
+        ],
+        "bedrooms": 6,
+        "bathrooms": 8,
+        "parking_spaces": 2,
+        "built_year": 2015,
+        "image": "luxurious_mountain_retreat.jpg"
+    },
+    {
+        "id": 3,
+        "estate_title": "Exclusive Beachfront Mansion",
+        "segment_name": "Luxury",
+        "description": "Indulge in the epitome of luxury living with this exclusive beachfront mansion. Boasting unparalleled ocean views, lavish interiors, and impeccable attention to detail.",
+        "price": "$15,000,000",
+        "status": "sale",
+        "area": "10000 sq ft",
+        "location": {
+            "country": "United States",
+            "city": "Miami Beach"
+        },
+        "facilities": [
+            "Private Beach Access",
+            "Infinity Pool",
+            "Fitness Center",
+            "Home Theater",
+            "Wine Cellar"
+        ],
+        "bedrooms": 8,
+        "bathrooms": 10,
+        "parking_spaces": 5,
+        "built_year": 2019,
+        "image": "exclusive_beachfront_mansion.jpg"
+    },
+    {
+        "id": 4,
+        "estate_title": "Luxury Penthouse in Manhattan",
+        "segment_name": "Luxury",
+        "description": "Live in the lap of luxury with this stunning penthouse in the heart of Manhattan. Enjoy panoramic city views, exquisite finishes, and unparalleled amenities.",
+        "price": "$20,000,000",
+        "status": "sale",
+        "area": "6000 sq ft",
+        "location": {
+            "country": "United States",
+            "city": "New York"
+        },
+        "facilities": [
+            "Private Terrace",
+            "Infinity Pool",
+            "Gourmet Kitchen",
+            "Fitness Center",
+            "Concierge Service"
+        ],
+        "bedrooms": 4,
+        "bathrooms": 6,
+        "parking_spaces": 2,
+        "built_year": 2017,
+        "image": "luxury_penthouse_manhattan.jpg"
+    },
+    {
+        "id": 5,
+        "estate_title": "Secluded Island Retreat",
+        "segment_name": "Luxury",
+        "description": "Escape to your own private island paradise with this luxurious retreat. Surrounded by crystal-clear waters and lush greenery, this estate offers the ultimate in privacy and relaxation.",
+        "price": "$25,000,000",
+        "status": "sale",
+        "area": "15000 sq ft",
+        "location": {
+            "country": "Fiji",
+            "island": "Tavarua"
+        },
+        "facilities": [
+            "Private Beach",
+            "Infinity Pool",
+            "Tennis Court",
+            "Spa",
+            "Helipad"
+        ],
+        "bedrooms": 10,
+        "bathrooms": 12,
+        "parking_spaces": 0,
+        "built_year": 2016,
+        "image": "secluded_island_retreat.jpg"
+    },
+    {
+        "id": 6,
+        "estate_title": "Luxury Resort in the Caribbean",
+        "segment_name": "Luxury",
+        "description": "Experience unparalleled luxury at this exclusive resort in the Caribbean. With world-class amenities, stunning views, and impeccable service, this is paradise perfected.",
+        "price": "$30,000,000",
+        "status": "sale",
+        "area": "20000 sq ft",
+        "location": {
+            "country": "Saint Lucia",
+            "island": "Soufrière"
+        },
+        "facilities": [
+            "Private Beach",
+            "Infinity Pool",
+            "Spa",
+            "Gourmet Dining",
+            "Tennis Courts"
+        ],
+        "bedrooms": 15,
+        "bathrooms": 20,
+        "parking_spaces": 0,
+        "built_year": 2014,
+        "image": "luxury_resort_caribbean.jpg"
+    },
+    {
+        "id": 7,
+        "estate_title": "Exquisite Lakefront Villa",
+        "segment_name": "Luxury",
+        "description": "Discover luxury living at its finest with this exquisite lakefront villa. Boasting panoramic views, expansive outdoor living spaces, and impeccable craftsmanship.",
+        "price": "$12,500,000",
+        "status": "sale",
+        "area": "7000 sq ft",
+        "location": {
+            "country": "Italy",
+            "city": "Lake Como"
+        },
+        "facilities": [
+            "Infinity Pool",
+            "Private Boat Dock",
+            "Wine Cellar",
+            "Home Theater",
+            "Gym"
+        ],
+        "bedrooms": 6,
+        "bathrooms": 8,
+        "parking_spaces": 3,
+        "built_year": 2020,
+        "image": "exquisite_lakefront_villa.jpg"
+    },
+    {
+        "id": 8,
+        "estate_title": "Luxury Mansion in Beverly Hills",
+        "segment_name": "Luxury",
+        "description": "Embrace the epitome of luxury living with this stunning mansion in the prestigious Beverly Hills. Featuring opulent interiors, sprawling grounds, and unparalleled amenities.",
+        "price": "$35,000,000",
+        "status": "sale",
+        "area": "25000 sq ft",
+        "location": {
+            "country": "United States",
+            "city": "Beverly Hills"
+        },
+        "facilities": [
+            "Infinity Pool",
+            "Tennis Court",
+            "Wine Cellar",
+            "Guest House",
+            "Home Theater"
+        ],
+        "bedrooms": 12,
+        "bathrooms": 15,
+        "parking_spaces": 10,
+        "built_year": 2013,
+        "image": "luxury_mansion_beverly_hills.jpg"
+    },
+    {
+        "id": 9,
+        "estate_title": "Exclusive Hilltop Retreat",
+        "segment_name": "Luxury",
+        "description": "Escape to this exclusive hilltop retreat and experience luxury living like never before. With sweeping views, lush gardens, and unparalleled privacy, this estate is a true sanctuary.",
+        "price": "$18,000,000",
+        "status": "sale",
+        "area": "12000 sq ft",
+        "location": {
+            "country": "Spain",
+            "city": "Marbella"
+        },
+        "facilities": [
+            "Infinity Pool",
+            "Tennis Court",
+            "Home Theater",
+            "Gym",
+            "Sauna"
+        ],
+        "bedrooms": 9,
+        "bathrooms": 12,
+        "parking_spaces": 5,
+        "built_year": 2016,
+        "image": "exclusive_hilltop_retreat.jpg"
+    }
+]
