@@ -1,227 +1,132 @@
 [
     {
         "id": 1,
-        "estate_title": "Oceanfront Paradise Villa",
-        "segment_name": "Luxury",
-        "description": "Experience ultimate luxury and tranquility in this stunning oceanfront villa. Featuring breathtaking views, private beach access, and lavish amenities.",
-        "price": "$10,000,000",
-        "status": "sale",
-        "area": "5000 sq ft",
+        "estate_title": "Luxury Triplex Apartment in Gulshan",
+        "segment_name": "Duplex or Triplex Apartments",
+        "description": "Live in luxury at this modern apartment in the upscale Gulshan area. Enjoy panoramic city views, top-of-the-line finishes, and exclusive amenities.",
+        "price": "$500,000",
+        "status": "rent",
+        "area": "2500 sq ft",
         "location": {
-            "country": "Maldives",
-            "city": "Male"
+            "country": "Bangladesh",
+            "city": "Dhaka",
+            "area": "Gulshan"
         },
         "facilities": [
-            "Infinity Pool",
-            "Private Beach",
-            "Spa",
+            "Swimming Pool",
             "Gym",
-            "Theater Room"
+            "Concierge Service",
+            "Security",
+            "Private Parking"
         ],
-        "bedrooms": 5,
-        "bathrooms": 7,
-        "parking_spaces": 3,
-        "built_year": 2018,
-        "image": "oceanfront_paradise_villa.jpg"
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "parking_spaces": 2,
+        "built_year": 2015,
+        "image": "https://images.unsplash.com/photo-1580041065738-e72023775cdc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 2,
-        "estate_title": "Luxurious Mountain Retreat",
-        "segment_name": "Luxury",
-        "description": "Escape to the mountains in style with this exquisite retreat. Nestled in the heart of nature, this estate offers unparalleled privacy and sophistication.",
-        "price": "$7,500,000",
+        "estate_title": "Luxurious Modern Villa in Uttara",
+        "segment_name": "Villas",
+        "description": "Discover modern luxury with this spacious villa in Uttara. Featuring sleek design, expansive views, and exclusive amenities.",
+        "price": "$750,000",
         "status": "sale",
-        "area": "8000 sq ft",
+        "area": "3500 sq ft",
         "location": {
-            "country": "Switzerland",
-            "city": "Zermatt"
+            "country": "Bangladesh",
+            "city": "Dhaka",
+            "area": "Uttara"
         },
         "facilities": [
-            "Ski-in/Ski-out Access",
-            "Sauna",
-            "Wine Cellar",
+            "Swimming Pool",
+            "Private Garden",
             "Home Theater",
-            "Game Room"
+            "Gym",
+            "Security"
         ],
-        "bedrooms": 6,
-        "bathrooms": 8,
-        "parking_spaces": 2,
-        "built_year": 2015,
-        "image": "luxurious_mountain_retreat.jpg"
+        "bedrooms": 4,
+        "bathrooms": 5,
+        "parking_spaces": 3,
+        "built_year": 2018,
+        "image": "https://images.unsplash.com/photo-1595243643203-06ba168495ea?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 3,
-        "estate_title": "Exclusive Beachfront Mansion",
-        "segment_name": "Luxury",
-        "description": "Indulge in the epitome of luxury living with this exclusive beachfront mansion. Boasting unparalleled ocean views, lavish interiors, and impeccable attention to detail.",
-        "price": "$15,000,000",
+        "estate_title": "Executive Condominium in Banani",
+        "segment_name": "Condominiums",
+        "description": "Live in style at this executive condominium located in the vibrant Banani area. Enjoy modern design, city views, and exclusive amenities.",
+        "price": "$600,000",
         "status": "sale",
-        "area": "10000 sq ft",
+        "area": "2000 sq ft",
         "location": {
-            "country": "United States",
-            "city": "Miami Beach"
+            "country": "Bangladesh",
+            "city": "Dhaka",
+            "area": "Banani"
         },
         "facilities": [
-            "Private Beach Access",
-            "Infinity Pool",
-            "Fitness Center",
-            "Home Theater",
-            "Wine Cellar"
+            "Gym",
+            "Swimming Pool",
+            "Concierge Service",
+            "Private Parking",
+            "Community Lounge"
         ],
-        "bedrooms": 8,
-        "bathrooms": 10,
-        "parking_spaces": 5,
-        "built_year": 2019,
-        "image": "exclusive_beachfront_mansion.jpg"
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parking_spaces": 1,
+        "built_year": 2020,
+        "image": "https://images.unsplash.com/photo-1520608421741-68228b76b6df?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 4,
-        "estate_title": "Luxury Penthouse in Manhattan",
-        "segment_name": "Luxury",
-        "description": "Live in the lap of luxury with this stunning penthouse in the heart of Manhattan. Enjoy panoramic city views, exquisite finishes, and unparalleled amenities.",
-        "price": "$20,000,000",
+        "estate_title": "Luxury Penthouse in Dhanmondi",
+        "segment_name": "Penthouse",
+        "description": "Experience luxury living at its finest with this stunning penthouse located in Dhanmondi. Featuring opulent interiors, lush surroundings, and top-notch amenities.",
+        "price": "$1,200,000",
         "status": "sale",
-        "area": "6000 sq ft",
+        "area": "4000 sq ft",
         "location": {
-            "country": "United States",
-            "city": "New York"
+            "country": "Bangladesh",
+            "city": "Dhaka",
+            "area": "Dhanmondi"
         },
         "facilities": [
-            "Private Terrace",
             "Infinity Pool",
-            "Gourmet Kitchen",
-            "Fitness Center",
-            "Concierge Service"
+            "Private Terrace",
+            "Home Theater",
+            "Gym",
+            "Security"
         ],
         "bedrooms": 4,
-        "bathrooms": 6,
+        "bathrooms": 5,
         "parking_spaces": 2,
         "built_year": 2017,
-        "image": "luxury_penthouse_manhattan.jpg"
+        "image": "https://images.unsplash.com/photo-1592178036775-70c41f818c13?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 5,
-        "estate_title": "Secluded Island Retreat",
-        "segment_name": "Luxury",
-        "description": "Escape to your own private island paradise with this luxurious retreat. Surrounded by crystal-clear waters and lush greenery, this estate offers the ultimate in privacy and relaxation.",
-        "price": "$25,000,000",
+        "estate_title": "Exclusive Mansion in Baridhara",
+        "segment_name": "Mansions",
+        "description": "Indulge in luxury living with this exclusive mansion located in the prestigious Baridhara area. Offering grand spaces, lush gardens, and top-notch amenities.",
+        "price": "$2,500,000",
         "status": "sale",
-        "area": "15000 sq ft",
+        "area": "8000 sq ft",
         "location": {
-            "country": "Fiji",
-            "island": "Tavarua"
+            "country": "Bangladesh",
+            "city": "Dhaka",
+            "area": "Baridhara"
         },
         "facilities": [
-            "Private Beach",
-            "Infinity Pool",
-            "Tennis Court",
-            "Spa",
-            "Helipad"
-        ],
-        "bedrooms": 10,
-        "bathrooms": 12,
-        "parking_spaces": 0,
-        "built_year": 2016,
-        "image": "secluded_island_retreat.jpg"
-    },
-    {
-        "id": 6,
-        "estate_title": "Luxury Resort in the Caribbean",
-        "segment_name": "Luxury",
-        "description": "Experience unparalleled luxury at this exclusive resort in the Caribbean. With world-class amenities, stunning views, and impeccable service, this is paradise perfected.",
-        "price": "$30,000,000",
-        "status": "sale",
-        "area": "20000 sq ft",
-        "location": {
-            "country": "Saint Lucia",
-            "island": "Soufrière"
-        },
-        "facilities": [
-            "Private Beach",
-            "Infinity Pool",
-            "Spa",
-            "Gourmet Dining",
-            "Tennis Courts"
-        ],
-        "bedrooms": 15,
-        "bathrooms": 20,
-        "parking_spaces": 0,
-        "built_year": 2014,
-        "image": "luxury_resort_caribbean.jpg"
-    },
-    {
-        "id": 7,
-        "estate_title": "Exquisite Lakefront Villa",
-        "segment_name": "Luxury",
-        "description": "Discover luxury living at its finest with this exquisite lakefront villa. Boasting panoramic views, expansive outdoor living spaces, and impeccable craftsmanship.",
-        "price": "$12,500,000",
-        "status": "sale",
-        "area": "7000 sq ft",
-        "location": {
-            "country": "Italy",
-            "city": "Lake Como"
-        },
-        "facilities": [
-            "Infinity Pool",
-            "Private Boat Dock",
-            "Wine Cellar",
-            "Home Theater",
-            "Gym"
-        ],
-        "bedrooms": 6,
-        "bathrooms": 8,
-        "parking_spaces": 3,
-        "built_year": 2020,
-        "image": "exquisite_lakefront_villa.jpg"
-    },
-    {
-        "id": 8,
-        "estate_title": "Luxury Mansion in Beverly Hills",
-        "segment_name": "Luxury",
-        "description": "Embrace the epitome of luxury living with this stunning mansion in the prestigious Beverly Hills. Featuring opulent interiors, sprawling grounds, and unparalleled amenities.",
-        "price": "$35,000,000",
-        "status": "sale",
-        "area": "25000 sq ft",
-        "location": {
-            "country": "United States",
-            "city": "Beverly Hills"
-        },
-        "facilities": [
-            "Infinity Pool",
-            "Tennis Court",
-            "Wine Cellar",
-            "Guest House",
-            "Home Theater"
-        ],
-        "bedrooms": 12,
-        "bathrooms": 15,
-        "parking_spaces": 10,
-        "built_year": 2013,
-        "image": "luxury_mansion_beverly_hills.jpg"
-    },
-    {
-        "id": 9,
-        "estate_title": "Exclusive Hilltop Retreat",
-        "segment_name": "Luxury",
-        "description": "Escape to this exclusive hilltop retreat and experience luxury living like never before. With sweeping views, lush gardens, and unparalleled privacy, this estate is a true sanctuary.",
-        "price": "$18,000,000",
-        "status": "sale",
-        "area": "12000 sq ft",
-        "location": {
-            "country": "Spain",
-            "city": "Marbella"
-        },
-        "facilities": [
-            "Infinity Pool",
-            "Tennis Court",
+            "Private Garden",
+            "Swimming Pool",
             "Home Theater",
             "Gym",
             "Sauna"
         ],
-        "bedrooms": 9,
-        "bathrooms": 12,
-        "parking_spaces": 5,
-        "built_year": 2016,
-        "image": "exclusive_hilltop_retreat.jpg"
+        "bedrooms": 7,
+        "bathrooms": 8,
+        "parking_spaces": 4,
+        "built_year": 2019,
+        "image": "https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 ]

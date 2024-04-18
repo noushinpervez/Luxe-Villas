@@ -6,6 +6,7 @@ import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import UserProfile from "../components/UserProfile/UserProfile";
 import Login from "../components/Login/Login";
 import Signup from "../components/Signup/Signup"
+import PropertyDetails from "../components/PropertyDetails/PropertyDetails";
 
 export const router = createBrowserRouter([
     {
@@ -17,6 +18,7 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
+                loader: () => fetch('/properties.json'),
             },
             {
                 path: "/updateprofile",
@@ -33,6 +35,11 @@ export const router = createBrowserRouter([
             {
                 path: "/signup",
                 element: <Signup></Signup>,
+            },
+            {
+                path: "/:id",
+                loader: () => fetch('/properties.json'),
+                element: <PropertyDetails></PropertyDetails>,
             },
         ],
     },
