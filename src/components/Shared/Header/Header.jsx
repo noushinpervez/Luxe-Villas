@@ -1,8 +1,10 @@
 import React from "react";
-import { Navbar, MobileNav, Typography, Button, IconButton } from "@material-tailwind/react";
+import { Navbar, MobileNav, Typography, Button, IconButton, Tooltip } from "@material-tailwind/react";
 import { NavLink, Link, useLocation } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
 const Header = () => {
+    const { logout, user } = useAuth();
     const location = useLocation();
     const [openNav, setOpenNav] = React.useState(false);
 
@@ -18,6 +20,10 @@ const Header = () => {
         fontWeight: 600,
         transition: "all 0.3s ease-in-out",
         fontSize: "13px",
+    };
+
+    const getProfileImage = () => {
+        return user?.photoURL || "./logo.png";
     };
 
     const navList = (
@@ -89,22 +95,51 @@ const Header = () => {
                     <img src="./logo.png" className="w-10 h-10 rounded-full"></img>Luxe Villas
                 </Link>
                 <div className="hidden lg:block">{ navList }</div>
-                <div className="flex items-center gap-x-1">
-                    <Link to="/login">
-                        <Button variant="outlined" size="sm" className="hidden lg:inline-block text-[#ecefeb] border-2 border-white">
-                            <span>Log In</span>
-                        </Button>
-                    </Link>
-                    <Link to="/signup">
-                        <Button
-                            variant="outlined"
-                            size="sm"
-                            className="hidden lg:inline-block border-2 border-[#688165] bg-[#688165]"
-                        >
-                            <span>Sign up</span>
-                        </Button>
-                    </Link>
+
+                <div className="lg:flex items-center gap-x-1 hidden">
+
+                    { user?.email ? (
+                        <>
+                            <Tooltip content={ <div>{ user.displayName }</div> }>
+                                <img alt="" className="w-10 h-10 rounded-full ring-2 ring-offset-1 ring-[#688165] mr-3" src={ getProfileImage() } />
+                            </Tooltip>
+                            <Button
+                                variant="outlined"
+                                size="sm"
+                                className="hidden lg:inline-block text-[#ecefeb] border-2 border-white"
+                                onClick={ logout }
+                            >
+                                Logout
+                            </Button>
+                        </>
+
+                    ) : (
+
+                        <>
+                            <Link to="/login">
+                                <Button
+                                    variant="outlined"
+                                    size="sm"
+                                    className="hidden lg:inline-block text-[#ecefeb] border-2 border-white"
+                                >
+                                    Log In
+                                </Button>
+                            </Link>
+                            <Link to="/signup">
+                                <Button
+                                    variant="outlined"
+                                    size="sm"
+                                    className="hidden lg:inline-block border-2 border-[#688165] bg-[#688165]"
+                                >
+                                    Sign up
+                                </Button>
+                            </Link>
+                        </>
+
+                    ) }
+
                 </div>
+
                 <IconButton
                     variant="text"
                     className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -147,16 +182,48 @@ const Header = () => {
                 <div className="container mx-auto p-[1%] h-fit">
                     { navList }
                     <div className="flex items-center gap-x-1">
-                        <Link to="/login" className="flex-1">
-                            <Button fullWidth variant="outlined" size="sm" className="text-[#ecefeb] border-2 border-white">
-                                <span>Log In</span>
-                            </Button>
-                        </Link>
-                        <Link to="/signup" className="flex-1">
-                            <Button fullWidth variant="outlined" size="sm" className="border-2 border-[#688165] bg-[#688165]">
-                                <span>Sign up</span>
-                            </Button>
-                        </Link>
+                        { user ? (
+                            <>
+                                <Tooltip content={ user.displayName }>
+                                    <img
+                                        alt=""
+                                        className="w-12 h-12 max-w-fit max-h-fit rounded-full ring-2 ring-offset-1 ring-[#688165] mr-3 basis-1/2"
+                                        src={ getProfileImage() }
+                                    />
+                                </Tooltip>
+                                <Button
+                                    variant="outlined"
+                                    size="sm"
+                                    className="text-[#ecefeb] border-2 border-white basis-1/2"
+                                    onClick={ logout }
+                                >
+                                    Logout
+                                </Button>
+                            </>
+                        ) : (
+                            <>
+                                <Link to="/login" className="flex-1">
+                                    <Button
+                                        fullWidth
+                                        variant="outlined"
+                                        size="sm"
+                                        className="text-[#ecefeb] border-2 border-white"
+                                    >
+                                        Log In
+                                    </Button>
+                                </Link>
+                                <Link to="/signup" className="flex-1">
+                                    <Button
+                                        fullWidth
+                                        variant="outlined"
+                                        size="sm"
+                                        className="border-2 border-[#688165] bg-[#688165]"
+                                    >
+                                        Sign up
+                                    </Button>
+                                </Link>
+                            </>
+                        ) }
                     </div>
                 </div>
             </MobileNav>
