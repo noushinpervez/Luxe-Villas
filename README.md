@@ -4,8 +4,8 @@ Luxe Villas is a website dedicated to showcasing high-end luxury real estate pro
 
 ## Live Site
 
-Firebase live site [here](https://luxe-villas.web.app/).
-Netlify live site [here](https://luxevillas.netlify.app/).
+### Firebase live site [here](https://luxe-villas.web.app/).
+### Netlify live site [here](https://luxevillas.netlify.app/).
 
 ## Features and Characteristics
 
