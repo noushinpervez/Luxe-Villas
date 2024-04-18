@@ -1,7 +1,7 @@
 const UpdateProfile = () => {
     return (
         <div>
-            jhdfgfdsfvf
+            
         </div>
     );
 };
