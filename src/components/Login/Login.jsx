@@ -1,6 +1,5 @@
-import { useContext } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
 import useAuth from "../Hooks/useAuth";
 
@@ -26,12 +25,16 @@ const Login = () => {
             })
     };
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <section className="mx-auto my-[15%] lg:my-[5%] md:my-[7%] lg:p-0 px-[3%] flex justify-center items-center text-[#111410]">
             <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 font-medium">
 
                 <h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
-                <p className="text-center">Don't have account? <Link to="/signup" rel="noopener noreferrer" className="underline text-[#688165] font-semibold">Sign up here</Link>
+                <p className="text-center">Don't have an account? <Link to="/signup" rel="noopener noreferrer" className="underline text-[#688165] font-semibold">Sign up here</Link>
                 </p>
 
                 <div className="my-6 space-y-4">

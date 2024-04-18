@@ -7,6 +7,7 @@ import UserProfile from "../components/UserProfile/UserProfile";
 import Login from "../components/Login/Login";
 import Signup from "../components/Signup/Signup"
 import PropertyDetails from "../components/PropertyDetails/PropertyDetails";
+import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -39,7 +40,9 @@ export const router = createBrowserRouter([
             {
                 path: "/:id",
                 loader: () => fetch('/properties.json'),
-                element: <PropertyDetails></PropertyDetails>,
+                element: <PrivateRoute>
+                    <PropertyDetails></PropertyDetails>
+                </PrivateRoute>,
             },
         ],
     },
