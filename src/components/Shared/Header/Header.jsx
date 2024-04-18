@@ -84,9 +84,9 @@ const Header = () => {
         <Navbar className={ `absolute top-0 left-0 right-0 z-10 ${navbarStyle} rounded-none border-none mx-auto max-w-full px-4 py-2 lg:px-8 lg:py-4 backdrop-blur-none shadow-none` }>
             <div className="container mx-auto flex items-center justify-between">
                 <Link to="/"
-                    className="mr-4 cursor-pointer py-1.5 font-medium cinzel text-2xl"
+                    className="mr-4 cursor-pointer py-1.5 font-medium cinzel text-2xl flex items-center"
                 >
-                    Luxe Villas
+                    <img src="./logo.png" className="w-10 h-10 rounded-full"></img>Luxe Villas
                 </Link>
                 <div className="hidden lg:block">{ navList }</div>
                 <div className="flex items-center gap-x-1">

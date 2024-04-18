@@ -2,8 +2,6 @@ import RealEstate from "./RealEstate";
 import PropTypes from 'prop-types';
 
 const RealEstates = ({ properties }) => {
-    console.log(properties);
-
     return (
         <section className="lg:my-32 my-20 text-[#111410] flex flex-col">
             <h3 className="text-4xl text-center font-semibold mb-10">Property Types</h3>
