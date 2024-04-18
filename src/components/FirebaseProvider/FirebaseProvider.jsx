@@ -9,23 +9,27 @@ const FirebaseProvider = ({ children }) => {
     const githubProvider = new GithubAuthProvider();
 
     const [user, setUser] = useState(null);
-    console.log(user);
+    const [loading, setLoading] = useState(true);
 
     const createUser = (email, password) => {
+        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     };
 
     const signInUser = (email, password) => {
+        setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     };
 
     // google login
     const googleLogin = () => {
+        setLoading(true);
         return signInWithPopup(auth, googleProvider);
     };
 
     // github login
     const githubLogin = () => {
+        setLoading(true);
         return signInWithPopup(auth, githubProvider);
     };
 
@@ -36,14 +40,16 @@ const FirebaseProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
+                setLoading(false);
                 setUser(user);
             }
         });
+        return () => unsubscribe();
     }, []);
 
-    const data = { createUser, signInUser, googleLogin, githubLogin, logout, user };
+    const data = { createUser, signInUser, googleLogin, githubLogin, logout, user, loading };
 
     return (
         <AuthContext.Provider value={ data }>
