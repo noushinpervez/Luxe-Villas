@@ -1,6 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../Hooks/useAuth"
+import { useEffect } from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Signup = () => {
     const { createUser, updateUserProfile } = useAuth();
@@ -14,19 +17,28 @@ const Signup = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        const { email, password, image, fullName } = data;
+        const { email, password, photoURL, fullName } = data;
 
         createUser(email, password)
             .then(() => {
-                updateUserProfile(fullName, image)
+                updateUserProfile(fullName, photoURL)
                     .then(() => {
                         navigate(from);
                     });
             });
     };
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
+        Aos.init({ duration: 700 });
+        Aos.refresh();
+    }, []);
+
     return (
-        <section className="mx-auto my-[15%] lg:my-[5%] md:my-[7%] lg:p-0 px-[3%] flex justify-center items-center text-[#111410]">
+        <section className="mx-auto my-[15%] lg:my-[5%] md:my-[7%] lg:p-0 px-[3%] flex justify-center items-center text-[#111410]" data-aos="fade-left">
             <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 font-medium">
                 <h2 className="mb-3 text-3xl font-semibold text-center">Signup for an account</h2>
                 <p className="text-center">Have an account? <Link to="/login" rel="noopener noreferrer" className="underline text-[#688165] font-semibold">Signin here</Link>
@@ -48,7 +60,7 @@ const Signup = () => {
                         </div>
 
                         <div className="space-y-2">
-                            <label htmlFor="url" className="block font-semibold">Photo URL</label>
+                            <label htmlFor="text" className="block font-semibold">Photo URL</label>
                             <div className="flex border rounded-md">
                                 <span className="flex items-center px-3 pointer-events-none sm: rounded-l-md bg-[#688165]/30">https://</span>
                                 <input type="text" name="url" placeholder="www.photourl.com" className="w-full flex-1 border sm: rounded-r-md focus:ring-inset px-3 py-2 focus:outline-[#688165]" { ...register("photoURL", { required: true }) } />
@@ -58,8 +70,10 @@ const Signup = () => {
 
                         <div className="space-y-2">
                             <label htmlFor="password" className="block font-semibold">Password</label>
-                            <input type="password" name="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md focus:outline-[#688165]" { ...register("password", { required: true }) } />
-                            { errors.password && <span className="text-[#B00020] text-sm italic font-semibold opacity-70">This field is required*</span> }
+                            <input type="password" name="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md focus:outline-[#688165]" { ...register("password", { required: true, minLength: 6, pattern: /^(?=.*?[A-Z])(?=.*?[a-z]).{6,}$/ }) } />
+                            { errors.password && errors.password.type === "required" && <span className="text-[#B00020] text-sm italic font-semibold opacity-70">This field is required*</span> }
+                            { errors.password && errors.password.type === "minLength" && <span className="text-[#B00020] text-sm italic font-semibold opacity-70">Password must be at least 6 characters*</span> }
+                            { errors.password && errors.password.type === "pattern" && <span className="text-[#B00020] text-sm italic font-semibold opacity-70">Password must contain at least one uppercase letter and one lowercase letter</span> }
                         </div>
 
                     </div>

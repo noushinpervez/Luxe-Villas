@@ -1,6 +1,7 @@
 import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
 import Loading from "../Spinner/Loading";
+import PropTypes from 'prop-types';
 
 const PrivateRoute = ({ children }) => {
     const { user, loading } = useAuth();
@@ -11,7 +12,7 @@ const PrivateRoute = ({ children }) => {
     }
 
     if (!user) {
-        return <Navigate to="/login" state={ location?.pathname || '/' }></Navigate>;
+        return <Navigate to="/login" state={ location?.pathname || "/" }></Navigate>;
     }
 
     return (
@@ -20,5 +21,9 @@ const PrivateRoute = ({ children }) => {
         </div>
     );
 };
+
+PrivateRoute.propTypes = {
+    children: PropTypes.object
+}
 
 export default PrivateRoute;

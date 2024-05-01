@@ -2,7 +2,7 @@
 
 Luxe Villas is a website dedicated to showcasing high-end luxury real estate properties in Bangladesh. With a focus on elegance and sophistication, Luxe Villas provides a platform for users to explore and discover luxurious homes, villas, penthouses, and more.
 
-## Live Site
+## Live Sites
 
 ### Firebase live site [here](https://luxe-villas.web.app/).
 ### Netlify live site [here](https://luxevillas.netlify.app/).

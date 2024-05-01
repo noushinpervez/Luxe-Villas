@@ -5,12 +5,20 @@ import { MdOutlineAreaChart } from "react-icons/md";
 import { MdOutlineRealEstateAgent } from "react-icons/md";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const RealEstate = ({ properties }) => {
     const { id, estate_title, segment_name, description, price, status, area, location, facilities, bedrooms, image } = properties;
 
+    useEffect(() => {
+        Aos.init({ duration: 700 });
+        Aos.refresh();
+    }, []);
+
     return (
-        <Card className="w-full max-w-[26rem] shadow-none text-[#111410] bg-transparent rounded-none lg:p-0 p-[3%]">
+        <Card className="w-full max-w-[26rem] shadow-none text-[#111410] bg-transparent rounded-none lg:p-0 p-[3%]" data-aos="fade-up">
             <CardHeader floated={ false } color="blue-gray" className="shadow-none rounded-none m-0">
                 <div className="flex justify-center items-center h-80">
                     <img
@@ -76,7 +84,7 @@ const RealEstate = ({ properties }) => {
                 </div>
 
                 <div className="flex justify-between items-center">
-                    <Typography variant="h6" className="mt-8 font-bold text-2xl cinzel text-[#688165]" style={ { WebkitTextStroke: '1px #020302' } }>
+                    <Typography variant="h6" className="mt-8 font-bold text-2xl cinzel text-[#688165] tracking-widest" style={ { WebkitTextStroke: '1px #020302' } }>
                         { price }
                     </Typography>
                     <Typography variant="h6" className="mt-8 font-extrabold text-xl cinzel text-[#688165]">
@@ -85,9 +93,10 @@ const RealEstate = ({ properties }) => {
                 </div>
 
             </CardBody>
+
             <CardFooter className="p-0 mt-3">
-                <Link to={ `/${id}` }>
-                    <Button size="lg" fullWidth={ true } className="bg-[#688165] text-[#020302]">
+                <Link to={ `/${id}` } state={ estate_title }>
+                    <Button size="lg" fullWidth={ true } className="bg-[#688165] text-[#020302] tracking-widest">
                         View Property
                     </Button>
                 </Link>

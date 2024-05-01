@@ -15,7 +15,7 @@ const RealEstates = ({ properties }) => {
 };
 
 RealEstates.propTypes = {
-    properties: PropTypes.object
+    properties: PropTypes.array
 }
 
 export default RealEstates;

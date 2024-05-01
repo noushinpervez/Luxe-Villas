@@ -90,7 +90,7 @@ const Header = () => {
         <Navbar className={ `absolute top-0 left-0 right-0 z-10 ${navbarStyle} rounded-none border-none mx-auto max-w-full px-4 py-2 lg:px-8 lg:py-4 backdrop-blur-none shadow-none` }>
             <div className="container mx-auto flex items-center justify-between">
                 <Link to="/"
-                    className="mr-4 cursor-pointer py-1.5 font-medium cinzel text-2xl flex items-center"
+                    className="mr-4 cursor-pointer py-1.5 font-medium cinzel text-2xl flex items-center tracking-widest"
                 >
                     <img src="./logo.png" className="w-10 h-10 rounded-full"></img>Luxe Villas
                 </Link>
@@ -98,7 +98,7 @@ const Header = () => {
 
                 <div className="lg:flex items-center gap-x-1 hidden">
 
-                    { user?.email ? (
+                    { user ? (
                         <>
                             <Tooltip content={ <div>{ user.displayName }</div> }>
                                 <img alt="" className="w-10 h-10 rounded-full ring-2 ring-offset-1 ring-[#688165] mr-3" src={ getProfileImage() } />

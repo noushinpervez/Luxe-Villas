@@ -6,23 +6,23 @@ const currentYear = new Date().getFullYear();
 
 const Footer = () => {
     return (
-        <footer className="relative w-full bg-[#020302] pt-4 px-4">
+        <footer className="relative w-full bg-[#020302] pt-12 px-4">
             <div className="mx-auto w-full max-w-[1320px]">
-                <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
+                <div className="grid grid-cols-1 justify-between gap-4 lg:grid-cols-2">
                     <section className="flex justify-center flex-col items-center">
                         <Link to="/">
                             <img className="mb-3 w-1/3 mx-auto" src="./logo.png" alt="logo" />
-                            <Typography variant="h5" className="text-4xl mb-6 cinzel font-medium text-center">
+                            <Typography variant="h5" className="text-4xl mb-6 cinzel font-medium text-center tracking-widest">
                                 Luxe Villas
                             </Typography>
                         </Link>
                     </section>
 
-                    <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-[#fcfdfc] py-4 md:hidden lg:hidden">
+                    <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-[#fcfdfc] py-4 lg:hidden lg:hidden">
                     </div>
 
                     <section>
-                        <div className="grid max-w-6xl grid-cols-1 mx-auto md:grid-cols-2 md:divide-x">
+                        <div className="grid max-w-6xl grid-cols-1 mx-auto lg:grid-cols-2 lg:divide-x">
                             <div>
                                 <h1 className="text-3xl font-bold">Contact Us</h1>
                                 <p className="pt-2 pb-4">Reach Out, Connect, and Start Your Path to Home. We are Only One Call Away.</p>
@@ -48,18 +48,18 @@ const Footer = () => {
                                     </p>
                                 </div>
                             </div>
-                            <form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+                            <form noValidate="" className="flex flex-col py-6 space-y-6 lg:py-0 lg:px-6">
                                 <label className="block">
                                     <span className="mb-1">Full Name</span>
-                                    <input type="text" placeholder="First and Last Name" className="block w-full rounded-md shadow-sm focus:ring p-2" />
+                                    <input type="text" placeholder="First and Last Name" className="block w-full rounded-lg shadow-sm focus:ring p-2" />
                                 </label>
                                 <label className="block">
                                     <span className="mb-1">Email Address</span>
-                                    <input type="email" placeholder="Email" className="block w-full rounded-md shadow-sm focus:ring p-2" />
+                                    <input type="email" placeholder="Email" className="block w-full rounded-lg shadow-sm focus:ring p-2" />
                                 </label>
                                 <label className="block">
                                     <span className="mb-1">Message</span>
-                                    <textarea rows="3" placeholder="How can we help you?" className="block w-full rounded-md focus:ring p-2"></textarea>
+                                    <textarea rows="3" placeholder="How can we help you?" className="block w-full rounded-lg focus:ring p-2"></textarea>
                                 </label>
                                 <Button variant="outlined" ripple={ true } className="border-[#fcfdfc] border-2 text-[#ecefeb]">Submit</Button>
                             </form>
@@ -67,10 +67,10 @@ const Footer = () => {
                     </section>
                 </div>
 
-                <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-[#fcfdfc] py-4 md:flex-row md:justify-between">
+                <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-[#fcfdfc] py-4 lg:flex-row lg:justify-between">
                     <Typography
                         variant="small"
-                        className="mb-4 text-center font-normal text-[#ecefeb] md:mb-0"
+                        className="mb-4 text-center font-normal text-[#ecefeb] lg:mb-0"
                     >
                         &copy; { currentYear } <a href="https://material-tailwind.com/">Luxe Villas</a>. All
                         Rights Reserved.
